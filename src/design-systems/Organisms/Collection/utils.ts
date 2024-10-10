@@ -1,0 +1,112 @@
+import { searchData } from '@/api-services/interfaces/auth'
+
+export const tabOptions = [
+  { label: 'Items', value: 'items' },
+  { label: 'Activity', value: 'activity' },
+]
+
+export const dummyData: searchData[] = [
+  {
+    id: '663e1f8c13fc660b01059e17',
+    collection_address: '0x491d9eba4ca25c3260c9d4bbea5483aca2962c7b',
+    network_id: '2',
+    is_approve: true,
+    file: 'https://ipfs.io/ipfs/QmVXw64aUUyEzBUu2sxJ8eaHHpozeNs7GGKPZYHoVRQDD3',
+    s3_url: 'https://solav-prod.s3.amazonaws.com/aiImages/1715347310509.png',
+    redeemable: false,
+    redeem_verified: false,
+    nft_type: '',
+    contract_type: 'Solav Drop',
+    collectible_owner: '0xf67aa4b351ac39afc5c0ed113046036b6750923d',
+    title: 'Tiger and Elephant',
+    description: 'Tiger and Elephant',
+    royalties: 8,
+    usd_amount: 0.0008376,
+    onSale: true,
+    is_hide: false,
+    created_by: '660ab588f1a40b0d1c3f4e06',
+    is_active: true,
+    previewUrl: 'https://d286z1jdp6gix8.cloudfront.net/aiImages/1715163375930.png',
+    history: {},
+    isShowPromptPublicly: false,
+    created_on: '2024-05-10T13:22:20.215Z',
+    userObj: {
+      name: 'Preetam',
+      image: 'https://solav.s3.amazonaws.com/userUpload/1714546550539.png',
+      wallet_address: '0xf67aa4b351ac39afc5c0ed113046036b6750923d',
+    },
+    auctionDetails: {
+      id: '663e1ffc13fc660b01059eac',
+      collectionAddress: '0x491d9eba4ca25c3260c9d4bbea5483aca2962c7b',
+      tokenId: '',
+      networkId: '2',
+      collectibleId: '663e1f8c13fc660b01059e17',
+      nonce: '36',
+      signature:
+        '0x35f0e93aeaf1890995933914e08c943c7f862ad0ad873b75ce47898b3389636a63f30ddd4ad7ac7626d72e903f23eb468f60b36270546eeec36f4be5d72fe7a01b',
+      contractAddress: '0xfe90908194b03a0b5e3ec45965bb3cb5ef9959a9',
+      lastOwner: '0xf67aa4b351ac39afc5c0ed113046036b6750923d',
+      currentBid: '0',
+      highestBidder: '0x0000000000000000000000000000000000000000',
+      auctionType: '1',
+      startingPrice: '0',
+      buyPrice: '1000000000000000000',
+      buyer: '0x0000000000000000000000000000000000000000',
+      isTokenGated: false,
+      tokenGateAddress: '0x0000000000000000000000000000000000000000',
+      memberShipTiers: 1,
+      collector: '0x0000000000000000000000000000000000000000',
+      startingTime: '2024-05-10T13:24:00.000Z',
+      closingTime: '1970-01-01T00:00:00.000Z',
+      initialClosingTime: '1970-01-01T00:00:00.000Z',
+      erc20Token: '0xbbbb450e756bb5918d418913197d6ab4014d62dd',
+      isActive: true,
+      isDynamicPricing: false,
+      dynamicPrice: 0,
+      bidTime: '1970-01-01T00:00:00.000Z',
+    },
+    total_like: 0,
+    isOnSaleSort: 1,
+    generatedImagePrompt: 'a group of tiger fighting with a group of elephant with weapons',
+    isLike: false,
+    last_erc20_address: '0xbbbb450e756bb5918d418913197d6ab4014d62dd',
+    eth_price: 1000000000000000000,
+    price: '1000000000000000000',
+    image: '',
+    redeem_type: 0,
+    file_content_type: '',
+    networkId: '',
+    collectibleOwner: '',
+    lastErc20Address: '0xbbbb450e756bb5918d418913197d6ab4014d62dd',
+  },
+]
+
+export const filters = [
+  {
+    dropdownType: 'network',
+    label: 'Network',
+    key: 'Network',
+    child: [
+      { label: 'All', key: '' },
+      { label: 'Ethereum', key: '1' },
+      { label: 'Polygon', key: '2' },
+    ],
+  },
+  {
+    dropdownType: 'sort',
+    label: 'Sort by',
+    key: 'sort',
+    child: [
+      { label: 'Recently Added', key: 'recently_added' },
+      { label: 'Price: Low to high', key: 'price_low_to_high' },
+      { label: 'Price: High to low', key: 'price_high_to_low' },
+      { label: 'Auction Ending soon', key: 'auction_ending_soon' },
+    ],
+  },
+]
+
+export const time = [
+  { label: 'All', key: '' },
+  { label: 'Fixed Price', key: '1' },
+  { label: 'Time Auction', key: '2' },
+]
